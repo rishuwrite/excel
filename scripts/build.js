@@ -1,0 +1,1 @@
+const fs=require('fs'),path=require('path');const out=path.resolve('dist');fs.rmSync(out,{recursive:true,force:true});for(const p of ['manifest.xml','taskpane.html','src']){const s=path.resolve(p),d=path.join(out,p);fs.mkdirSync(path.dirname(d),{recursive:true});fs.cpSync(s,d,{recursive:true})}console.log('Built dist/')
