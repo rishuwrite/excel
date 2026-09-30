@@ -1,0 +1,1 @@
+const test=require('node:test'),assert=require('node:assert'),fs=require('node:fs');test('registry ids are unique',()=>{const t=fs.readFileSync('src/features.js','utf8');const ids=[...t.matchAll(/id:'([^']+)'/g)].map(m=>m[1]);assert.equal(ids.length,new Set(ids).size);assert.ok(ids.length>=10)})
