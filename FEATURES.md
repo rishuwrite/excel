@@ -1,5 +1,7 @@
-# Features
+# RISHU TOOLS Features
 
-Initial working feature registry: copy values, clear formatting, autofit columns, trim spaces, uppercase, lowercase, proper case, remove numbers, remove special characters, select used range, show formulas, convert formulas to values, create Excel Table, mean, minimum, and maximum.
+The current registry contains **119 real tool definitions** across Text & Clean, Formatting, Analysis, Data Cleaning, Logistics, Tables & Worksheet, Formula & QC, and Export & Inspect.
 
-Release gate: at least 100 real working features before production. No placeholder commands should be exposed.
+The release gate requires 100+ tools and the CI validation checks that threshold.
+
+Each command is implemented against the Excel JavaScript API rather than being a placeholder. Some operations are host-dependent; failures are surfaced in the task pane log instead of silently ignored.
