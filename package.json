@@ -1,0 +1,1 @@
+{"name":"rishu-tools-excel-addin","version":"0.1.0","private":true,"scripts":{"build":"node scripts/build.js","validate":"node scripts/validate.js","start":"node scripts/serve.js","test":"node --test"},"dependencies":{"@microsoft/office-js":"^1.1.97"}}
